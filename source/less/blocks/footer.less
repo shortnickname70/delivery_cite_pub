@@ -1,0 +1,199 @@
+// Начните писать стили здесь
+.footer {
+  flex-grow: 1;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.footer__content {
+  box-sizing: border-box;
+}
+
+.footer__logo-link:hover svg {
+  opacity: 0.7;
+}
+
+.footer__logo-link:focus svg {
+  opacity: 0.5;
+}
+
+.footer__logo {
+  margin: 38px 76px 28px 76px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 281px;
+  min-height: 78px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  align-items: center;
+}
+
+.footer__copyright:hover .footer__htmlacademy {
+  color: #68b738;
+}
+
+.footer__copyright:focus {
+  opacity: 0.5;
+}
+
+.footer__copyright:focus .footer__htmlacademy {
+  color: #68b738;
+  opacity: 0.5;
+}
+
+
+//footer-socials
+
+.footer__socials {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  min-height: 64px;
+  box-sizing: border-box;
+  padding-top: 24px;
+}
+
+.footer__socials-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-left: 73px;
+  padding-right: 82px;
+}
+
+.footer__socials-item:nth-child(1) {
+  margin-top: -1px;
+}
+
+.footer__socials-item:nth-child(2) {
+  margin-left: 4px;
+}
+
+.footer__socials-item:nth-child(3) {
+  margin-right: -4px;
+  display: block;
+  margin-top: -5px;
+}
+
+.footer__socials-link {
+  color: #666666;
+  display: block;
+}
+
+.footer__socials-link:hover {
+  color: #68b738;
+}
+
+.footer__socials-link:focus {
+  color: #68b738;
+  opacity: 0.5;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__content {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 150px;
+    align-items: center;
+  }
+
+  .footer__logo {
+    margin: 0;
+    margin-right: 156px;
+  }
+
+  .footer__copyright {
+    width: 163px;
+    min-height: 34px;
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+    background-position: 0;
+  }
+
+  //footer-socials
+
+  .footer__socials {
+    min-width: 129px;
+    border-top: none;
+    border-bottom: none;
+    margin-right: 131px;
+    padding-top: 18px;
+  }
+
+  .footer__socials-item {
+    width: min-content;
+    height: min-content;
+  }
+
+  .footer__socials-item:nth-child(3) {
+    width: 28px;
+    height: 33px;
+    margin-right: 0;
+    margin-top: -2px;
+  }
+
+  .footer__socials-vk {
+    width: 30px;
+    height: 22px;
+  }
+
+  .footer__socials-insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .footer__socials-fb {
+    width: 28px;
+    height: 33px;
+    margin-top: -6px;
+  }
+
+  .footer__socials-list {
+    min-width: 129px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+    align-items: center;
+  }
+
+  .footer__logo-link {
+    display: block;
+  }
+
+  .footer__logo {
+    margin: 0 156px 5px 0;
+  }
+
+  .footer__copyright {
+    margin-bottom: 0;
+  }
+
+  //footer-socials
+  .footer__socials {
+    padding-top: 15px;
+  }
+
+  .footer__socials-list {
+    margin-top: 3px;
+  }
+}

@@ -1,0 +1,100 @@
+// Начните писать стили здесь
+
+.gift {
+  background-image: url("../img/img-mobile-catalog-cat-in-washmachine.jpg");
+  background-color: #68b738;
+  padding: 186px 61px 43px 58px;
+  max-width: 161px;
+  position: relative;
+  margin-bottom: 35px;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/img-mobile-catalog-cat-in-washmachine-@2x.png");
+    background-size: 280px auto;
+    background-repeat: no-repeat;
+  }
+}
+
+.gift__icon {
+  top: 58px;
+  left: 101px;
+  position: absolute;
+}
+
+.gift__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  max-width: 161px;
+}
+
+@media (min-width: @tablet-width) {
+  .gift {
+    background-image: url("../img/img-tablet-catalog-cat-in-washmachine.png");
+    background-repeat: no-repeat;
+    background-color: #68b738;
+    padding: 0;
+    max-width: 708px;
+    min-height: 200px;
+    position: relative;
+    margin-bottom: 76px;
+    padding-left: 422px;
+    padding-top: 71px;
+    box-sizing: border-box;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-tablet-catalog-cat-in-washmachine-@2x.png");
+      background-size: 708px auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .gift__icon {
+    left: 77px;
+  }
+
+  .gift__text {
+    max-width: 161px;
+    text-align: start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift {
+    background-image: url("../img/img-desktop-catalog-cat-in-washmachine.png");
+    background-color: #68b738;
+    padding: 0;
+    min-width: 245px;
+    max-height: 289px;
+    position: relative;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-desktop-catalog-cat-in-washmachine-@2x.png");
+      background-size: 245px auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .gift__icon {
+    left: 83px;
+  }
+
+  .gift__text {
+    max-width: 161px;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 185px;
+  }
+}

@@ -1,0 +1,287 @@
+// Начните писать стили здесь
+.promo {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin-bottom: 22px;
+}
+
+.promo__background-color {
+  min-height: 302px;
+  width: 100%;
+  background: rgba(104, 183, 56, 0.85);
+  z-index: 4;
+  position: absolute;
+}
+
+.promo__background-cat {
+  min-height: 302px;
+  width: 320px;
+  background-image: url("../img/img-mobile-cat-tongue.jpg");
+  background-repeat: no-repeat;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.promo__info-wrapper {
+  min-height: 302px;
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.promo__info {
+  z-index: 10;
+  position: relative;
+}
+
+.promo__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  padding: 0;
+  padding-top: 27px;
+  margin-bottom: 25px;
+}
+
+.promo__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  padding: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.promo__lower-half {
+  min-height: 178px;
+  width: 100%;
+  padding-top: 138px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.promo__lower-half::after {
+  content: "";
+  position: absolute;
+  background-image: url("/img/img-mobile-index-product.png");
+  width: 280px;
+  height: 270px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 43px;
+  z-index: 10;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/img-mobile-index-product-@2x.png");
+    background-size: 280px auto;
+    background-repeat: no-repeat;
+  }
+}
+
+.promo__button {
+  text-align: center;
+}
+
+.promo__button-link {
+  display: block;
+  margin: 0 auto;
+  padding: 11px 44px;
+  width: 280px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    margin-bottom: 0;
+  }
+
+  .promo__info-wrapper {
+    background-image: none;
+    background-color: #ffffff;
+    min-height: 183px;
+    margin-bottom: 20px;
+    width: 708px;
+  }
+
+  .promo__background-color,
+  .promo__background-cat {
+    display: none;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    max-width: 414px;
+    text-align: start;
+    margin-bottom: 39px;
+    padding-left: 87px;
+  }
+
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 0;
+    padding-left: 87px;
+  }
+
+  .promo__lower-half {
+    min-height: 607px;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 609px;
+  }
+
+  .promo__lower-half::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/img-tablet-index-product.png");
+    width: 708px;
+    height: 609px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-tablet-index-product-@2x.png");
+      background-size: 708px auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .promo__lower-half::after {
+    display: none;
+  }
+
+  .promo__button {
+    text-align: unset;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .promo__button-link {
+    width: 244px;
+    padding: 17px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 90px;
+    margin-top: 29px;
+    position: absolute;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    min-height: 474px;
+    margin-bottom: 62px;
+  }
+
+  .promo__title {
+    padding-left: 80px;
+    padding-top: 46px;
+  }
+
+  .promo__background-color {
+    display: block;
+    width: 50%;
+    height: 694px;
+    background: rgba(104, 183, 56, 0.85);
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .promo__background-cat {
+    display: block;
+    background-image: url("../img/img-desktop-cat-tongue.png");
+    background-size: cover;
+    background-position: center right;
+    width: 50%;
+    height: 694px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: none;
+  }
+
+  .promo__slogan {
+    padding: 0;
+    padding-left: 80px;
+  }
+
+  .promo__lower-half {
+    margin: 0;
+    width: 100%;
+    min-height: 293px;
+    background-image: none;
+    margin-left: 0;
+  }
+
+  .promo__info-wrapper {
+    position: relative;
+    background-color: transparent;
+    width: 1220px;
+  }
+
+  .promo__lower-half::before {
+    display: none;
+  }
+
+  .promo__info-wrapper::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/img-desktop-index-product.png");
+    width: 552px;
+    height: 499px;
+    left: 447px;
+    top: -37px;
+    z-index: 6;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-desktop-index-product-@2x.png");
+      background-size: 552px auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .promo__button {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .promo__button-link {
+    margin-left: 80px;
+    margin-top: 34px;
+  }
+}

@@ -1,0 +1,120 @@
+// Начните писать стили здесь
+.cooperation {
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.cooperation--background {
+  background-color: #f2f2f2;
+}
+
+.cooperation__wrapper-background {
+  background-color: #f2f2f2;
+}
+
+.cooperation__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.cooperation__invite {
+  display: block;
+  min-width: 139px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+}
+
+.cooperation__address {
+  display: block;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .cooperation {
+    background-color: #ffffff;
+    box-sizing: border-box;
+  }
+
+  .cooperation--background {
+    background-color: #f2f2f2;
+  }
+
+  .cooperation__wrapper-background {
+    background-color: #f2f2f2;
+  }
+
+  .cooperation__wrapper {
+    padding: 66px 42px 58px 41px;
+  }
+
+  .cooperation__invite {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    max-width: 171px;
+    height: min-content;
+  }
+
+  .cooperation__address {
+    display: block;
+    font-size: 16px;
+    line-height: 17px;
+    max-width: 160px;
+    text-align: end;
+    height: min-content;
+  }
+
+  .cooperation__spb {
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cooperation {
+    position: relative;
+  }
+
+  .cooperation__wrapper-background {
+    background-color: #f2f2f2;
+  }
+
+  .cooperation__wrapper {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    left: calc(50% - 610px);
+    top: 95px;
+    z-index: 11;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 65px 90px 58px 76px;
+  }
+
+  .cooperation__invite {
+    margin: 0;
+    max-width: 163px;
+    margin-right: 87px;
+  }
+
+  .cooperation__address {
+    margin: 0;
+    max-width: 155px;
+    text-align: start;
+  }
+}
