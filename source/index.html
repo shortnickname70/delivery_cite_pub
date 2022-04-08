@@ -16,20 +16,12 @@
 <body>
 
   <header class="page-header page-header--has-background ">
-    <div class="page-header__logos ">
-      <a class="page-header__logo-cat" href="index.html" aria-label="Логотип Cat Energy">
-        <svg width="34" height="38">
-          <use xlink:href="img/sprite.svg#icon-cat-header"></use>
-        </svg>
-      </a>
-      <a class="page-header__logo-text" href="index.html" aria-label="Логотип Cat Energy">
-        <svg width="101" height="18">
-          <use xlink:href="img/sprite.svg#icon-text-header"></use>
-        </svg>
+    <div class="page-header__logo">
+      <a class="page-header__logo-DK" href="index.html" aria-label="Логотип DK">
+        <img src="source/img/logo.png" alt="Логотип DK" width="86" height="41">
       </a>
     </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="main-nav__list-item">
@@ -39,21 +31,73 @@
           </li>
           <li class="main-nav__list-item">
             <a class="main-nav__link" href="catalog.html">
-              Каталог продукции
+              Отслеживание
             </a>
           </li>
           <li class="main-nav__list-item">
             <a class="main-nav__link" href="form.html">
-              Подбор программы
+              Ценовой запрос
+            </a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="form.html">
+              Вызов курьера
+            </a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="form.html">
+              Новости
+            </a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="form.html">
+              Услуги
+            </a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="form.html">
+              Контакты
+            </a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="form.html">
+              О нас
+            </a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="form.html">
+              ЧАВО
             </a>
           </li>
         </ul>
       </div>
     </nav>
+    <select name="page-language" id="page-language">
+      <option value="ru">RU</option>
+      <option value=""></option>
+      <option value=""></option>
+    </select>
+    <button class="main-nav__toggle" type="button">Войти</button>
+    <button class="main-nav__toggle" type="button">Регистрация</button>
   </header>
 
   <main>
-    </main>
+    <div class="main-wrapper">
+      <img src="source/img/index1-png.png" alt="Контейнеровоз" width="981" height="1000">
+      <div class="main-actions">
+        <form action="#" class="main-actions__form" method="get">
+          <h2 class="main-caption">Отследить мою посылку</h2>
+          <input type="text" name="trace" id="trace" placeholder="Введите номер Вашей накладной" class="trace">
+          <button class="primary-button" type="button">Отследить</button>
+        </form>
+        <h2 class="main-caption">Вызов курьера</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+          atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+          sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+          <button class="primary-button" type="button">Вызов курьера</button>
+        </div>
+    </div>
+  </main>
 
 
 
