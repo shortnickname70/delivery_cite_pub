@@ -7,6 +7,9 @@
   <title>DK Главная страница </title>
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="js/menu-management.js" as="script">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
   <link rel="preload" href="fonts/Abel-Regular.woff" as="font" type="font/woff">
   <link rel="stylesheet" href="css/style.min.css">
   <link href="source/css/style.css" rel="stylesheet">
@@ -15,14 +18,13 @@
 
 <body>
 
-  <header class="page-header page-header--has-background ">
+  <header class="page-header container ">
     <div class="page-header__logo">
       <a class="page-header__logo-DK" href="index.html" aria-label="Логотип DK">
-        <img src="source/img/logo.png" alt="Логотип DK" width="86" height="41">
+        <img src="/img/logo.png" alt="Логотип DK" width="86" height="41">
       </a>
     </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
+    <nav class="main-nav ">
         <ul class="main-nav__list site-list">
           <li class="main-nav__list-item">
             <a class="main-nav__link main-nav__link--border-bottom" href="index.html">
@@ -70,7 +72,7 @@
             </a>
           </li>
         </ul>
-      </div>
+
     </nav>
     <select name="page-language" id="page-language">
       <option value="ru">RU</option>
@@ -81,9 +83,9 @@
     <button class="main-nav__toggle" type="button">Регистрация</button>
   </header>
 
-  <main>
+  <main class="container">
     <div class="main-wrapper">
-      <img src="source/img/index1-png.png" alt="Контейнеровоз" width="981" height="1000">
+      <img src="img/index1-png.png" alt="Контейнеровоз" width="981" height="1000">
       <div class="main-actions">
         <form action="#" class="main-actions__form" method="get">
           <h2 class="main-caption">Отследить мою посылку</h2>
@@ -94,8 +96,8 @@
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
           atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
           sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-          <button class="primary-button" type="button">Вызов курьера</button>
-        </div>
+        <button class="primary-button" type="button">Вызов курьера</button>
+      </div>
     </div>
   </main>
 
@@ -105,7 +107,7 @@
   <footer class="footer">
   </footer>
 
-  <script src="js/menu-management.min.js"></script>
+  <!-- <script src="js/menu-management.min.js"></script> -->
 </body>
 
 </html>
