@@ -24,7 +24,7 @@
         <img src="/img/logo.png" alt="Логотип DK" width="86" height="41">
       </a>
     </div>
-    <nav class="main-nav ">
+    <nav class="main-nav main-nav--opened">
         <ul class="main-nav__list site-list">
           <li class="main-nav__list-item">
             <a class="main-nav__link main-nav__link--border-bottom" href="index.html">
@@ -79,11 +79,12 @@
       <option value=""></option>
       <option value=""></option>
     </select>
+    <button class="main-nav__burger-toggle" type="button"></button>
     <button class="main-nav__toggle" type="button">Войти</button>
     <button class="main-nav__toggle" type="button">Регистрация</button>
   </header>
 
-  <main class="container">
+  <main class="main container">
     <div class="main-wrapper">
       <img src="img/index1-png.png" alt="Контейнеровоз" width="981" height="1000">
       <div class="main-actions">
@@ -93,7 +94,7 @@
           <button class="primary-button" type="button">Отследить</button>
         </form>
         <h2 class="main-caption">Вызов курьера</h2>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+        <p class="main-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
           atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
           sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
         <button class="primary-button" type="button">Вызов курьера</button>
@@ -101,13 +102,10 @@
     </div>
   </main>
 
-
-
-
   <footer class="footer">
   </footer>
 
-  <!-- <script src="js/menu-management.min.js"></script> -->
+  <script src="/js/menu-management.min.js"></script>
 </body>
 
 </html>
