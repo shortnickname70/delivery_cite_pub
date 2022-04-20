@@ -1,5 +1,5 @@
 .main {
-margin-bottom: 90px;
+  margin-bottom: 90px;
 }
 
 .main-caption {
@@ -14,7 +14,7 @@ margin-bottom: 90px;
   width: 100%;
   border-bottom: 1px solid #3A88F5;
   height: 25px;
-    font-family: "Abel";
+  font-family: "Abel";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -27,7 +27,41 @@ margin-bottom: 90px;
   color: #81B5FF;
 
 }
+
 .main-description {
+  display: block;
   margin: 0;
   margin-bottom: 71px;
+}
+
+@media (min-width: @desktop-width) {
+  .main-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .main-img {
+    margin-right: 77px;
+  }
+
+  .main-caption {
+    text-align: left;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .main-actions {
+    max-width: 661px;
+  }
+
+  .main-actions__form {
+    margin-top: 180px;
+    margin-bottom: 142px;
+  }
+
+  .main-description {
+    max-width: 468px;
+    margin-bottom: 88px;
+    letter-spacing: 1.6px;
+  }
 }

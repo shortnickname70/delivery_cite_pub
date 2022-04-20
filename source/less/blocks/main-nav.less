@@ -49,7 +49,7 @@
 .main-nav__burger-toggle {
   position: absolute;
   top: -11px;
-  right: 38px;
+  left: calc(100% - 30px);
   cursor: pointer;
   padding: 0;
   background-color: transparent;
@@ -103,7 +103,7 @@
 .main-nav--opened {
   .main-nav__list {
     // position: absolute;
-    left: calc(50% - 160px);
+    left: (50% - 160px);
     top: 0;
     margin: 0;
     padding: 0;
@@ -154,6 +154,8 @@
     display: none;
   }
 
+
+
   .main-nav {
     display: block;
     width: 100%;
@@ -165,7 +167,7 @@
   #page-language {
     display: block;
   }
-
+  .main-nav--closed {
   .main-nav__list {
     display: flex;
     justify-content: space-between;
@@ -173,7 +175,7 @@
     padding: 0;
     margin-right: 70px;
   }
-
+  }
 
   .main-nav__list-item {
     display: block;
@@ -197,6 +199,6 @@
 
   .main-nav__list-item:first-child {
     border-bottom: none;
-    text-transform: none ;
+    text-transform: none;
   }
 }

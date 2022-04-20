@@ -13,11 +13,13 @@
 //   color: #ffffff;
 //   border: none;
 // }
-
+.page-header__button {
+display: none;
+}
 .primary-button {
   background: #FFB900;
   border-radius: 37px;
-  width: 352px;
+  width: 100%;
   height: 57px;
   font-family: 'Abel';
   font-style: normal;
@@ -28,12 +30,24 @@
 }
 
 @media (min-width: @desktop-width) {
-  .button {
-    padding: 14px 26px;
-    width: 244px;
+  .page-header__button {
+    background: transparent;
+    width: 159px;
+    height: 57px;
     font-size: 20px;
-    line-height: 20px;
-    margin-left: 80px;
-    margin-top: 52px;
+    line-height: 25px;
+    color: white;
+    border: none;
+  }
+
+  .page-header__button:hover {
+    background: #FFFFFF;
+    border-radius: 37px;
+    width: 159px;
+    height: 57px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1D1C1C;
+    text-transform: uppercase;
   }
 }
