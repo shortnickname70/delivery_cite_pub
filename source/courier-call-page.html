@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DK Главная страница </title>
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/menu-management.js" as="script">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/Abel-Regular.woff" as="font" type="font/woff">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="source/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="courier-call-page-body">
+
+  <header class="page-header container ">
+    <div class="page-header__logo">
+      <a class="page-header__logo-DK" href="index.html" aria-label="Логотип DK">
+        <img src="/img/logo.png" alt="Логотип DK" width="86" height="41">
+      </a>
+    </div>
+    <nav class="main-nav main-nav--opened">
+      <ul class="main-nav__list site-list">
+        <li class="main-nav__list-item">
+          <a class="main-nav__link main-nav__link--border-bottom" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__link" href="catalog.html">
+            Отслеживание
+          </a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__link" href="form.html">
+            Ценовой запрос
+          </a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__link" href="form.html">
+            Вызов курьера
+          </a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__link" href="form.html">
+            Новости
+          </a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__link" href="form.html">
+            Услуги
+          </a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__link" href="form.html">
+            Контакты
+          </a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__link" href="form.html">
+            О нас
+          </a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__link" href="form.html">
+            ЧАВО
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+    <select name="page-language" id="page-language">
+      <option value="ru">RU</option>
+      <option value=""></option>
+      <option value=""></option>
+    </select>
+    <button class="main-nav__burger-toggle" type="button"></button>
+    <button class="page-header__button" type="button">Войти</button>
+    <button class="page-header__button" type="button">Регистрация</button>
+  </header>
+
+  <!-- <main class="main container">
+    <div class="main-wrapper">
+      <img src="img/index1-png.png" class="main-img" alt="Контейнеровоз" width="981" height="1000">
+      <div class="main-actions">
+        <form action="#" class="main-actions__form" method="get">
+          <h2 class="main-caption">Отследить мою посылку</h2>
+          <input type="text" name="trace" id="trace" placeholder="Введите номер Вашей накладной" class="trace">
+          <button class="primary-button" type="button">Отследить</button>
+        </form>
+        <h2 class="main-caption">Вызов курьера</h2>
+        <p class="main-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+          atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+          sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+        <button class="primary-button" type="button">Вызов курьера</button>
+      </div>
+    </div>
+  </main> -->
+  <main class="main courier-call-main container">
+    <div class="main-sender">
+      <h1 class="courier-call-caption">Заполните информацию об отправителе</h1>
+      <form action="#" class="courier-call__form" method="get">
+        <div class="courier-call-sender-form">
+          <div class="sender-left-column">
+            <input type="text" name="sender-name" id="sender-name" placeholder="Имя" class="trace">
+            <input type="text" name="sender-email" id="sender-email" placeholder="E-mail" class="trace">
+            <input type="text" name="sender-phone" id="sender-phone" placeholder="Телефон" class="trace">
+            <input type="text" name="sender-company" id="sender-company" placeholder="Компания" class="trace">
+          </div>
+          <div class="sender-right-column">
+            <input type="text" name="sender-address1" id="sender-address1" placeholder="Адрес 1 (обязательно)"
+              class="trace">
+            <input type="text" name="sender-address2" id="sender-address2" placeholder="Адрес 2 (необязательно)"
+              class="trace">
+            <input type="text" name="sender-address3" id="sender-address3" placeholder="Адрес 3 (необязательно)"
+              class="trace">
+            <input type="text" name="sender-country" id="sender-country" placeholder="Город\Страна" class="trace">
+            <input type="text" name="sender-postindex" id="sender-postindex" placeholder="Индекс" class="trace">
+            <input type="text" name="sender-district" id="sender-district" placeholder="Район" class="trace">
+          </div>
+        </div>
+        <p class="courier-call-description">Выберите сохраненные адреса
+          <img src="/img/icon-question-mark.svg" alt="Знак вопроса" width="24" height="24">
+        </p>
+
+        <select name="sender-saved-addresses" id="sender-saved-addresses">
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+        <input type="checkbox" id="sender-to-save-address" name="sender-to-save-address">
+        <label for="sender-to-save-address">Сохранить адрес</label>
+      </form>
+    </div>
+
+    <div class="main-receiver">
+      <h1 class="courier-call-caption">Заполните информацию о получателе</h1>
+      <form action="#" class="courier-call__form" method="get">
+        <div class="courier-call-receiver-form">
+          <div class="receiver-left-column">
+            <input type="text" name="receiver-name" id="receiver-name" placeholder="Имя" class="trace">
+            <input type="text" name="receiver-email" id="receiver-email" placeholder="E-mail" class="trace">
+            <input type="text" name="receiver-phone" id="receiver-phone" placeholder="Телефон" class="trace">
+            <input type="text" name="receiver-company" id="receiver-company" placeholder="Компания" class="trace">
+          </div>
+          <div class="receiver-right-column">
+            <input type="text" name="receiver-address1" id="receiver-address1" placeholder="Адрес 1 (обязательно)"
+              class="trace">
+            <input type="text" name="receiver-address2" id="receiver-address2" placeholder="Адрес 2 (необязательно)"
+              class="trace">
+            <input type="text" name="receiver-address3" id="receiver-address3" placeholder="Адрес 3 (необязательно)"
+              class="trace">
+            <input type="text" name="receiver-country" id="receiver-country" placeholder="Город\Страна" class="trace">
+            <input type="text" name="receiver-postindex" id="receiver-postindex" placeholder="Индекс" class="trace">
+            <input type="text" name="receiver-district" id="receiver-district" placeholder="Район" class="trace">
+          </div>
+        </div>
+        <p class="courier-call-description">Выберите сохраненные адреса
+          <img src="/img/icon-question-mark.svg" alt="Знак вопроса" width="24" height="24">
+        </p>
+
+        <select name="receiver-saved-addresses" id="sender-saved-addresses">
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+        <input type="checkbox" id="receiver-to-save-address" name="receiver-to-save-address">
+        <label for="receiver-to-save-address">Сохранить адрес</label>
+      </form>
+    </div>
+    <div class="courier-call-buttons">
+      <button class="courier-call-buttons__clearing">Очистить форму</button>
+      <button class="courier-call-buttons__done">Далее</button>
+    </div>
+  </main>
+
+
+  <footer class="footer">
+  </footer>
+
+  <script src="/js/menu-management.min.js"></script>
+</body>
+
+</html>
